@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-BH-bJO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="101" id="o66-PU-64C" customClass="CoffeeTableViewCell" customModule="CoffeeStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o66-PU-64C" id="kz2-zP-g2P">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Rs-pX-FeP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="DvW-CC-yVq"/>
+                                                        <constraint firstAttribute="width" secondItem="5Rs-pX-FeP" secondAttribute="height" multiplier="1:1" id="oYX-Wu-Ea1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOm-18-pAs">
+                                                    <rect key="frame" x="116" y="13" width="42" height="75"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Rs-pX-FeP" firstAttribute="top" secondItem="kz2-zP-g2P" secondAttribute="top" id="Fzu-Zl-2Na"/>
+                                                <constraint firstItem="kOm-18-pAs" firstAttribute="leading" secondItem="5Rs-pX-FeP" secondAttribute="trailing" constant="16" id="Icr-9p-DtV"/>
+                                                <constraint firstItem="5Rs-pX-FeP" firstAttribute="leading" secondItem="kz2-zP-g2P" secondAttribute="leading" id="fjQ-iz-SKN"/>
+                                                <constraint firstItem="kOm-18-pAs" firstAttribute="top" secondItem="kz2-zP-g2P" secondAttribute="topMargin" constant="2" id="mgo-a2-0Az"/>
+                                                <constraint firstItem="kOm-18-pAs" firstAttribute="centerY" secondItem="kz2-zP-g2P" secondAttribute="centerY" id="p2U-MI-dSO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="name" destination="kOm-18-pAs" id="UHb-8E-1IY"/>
+                                            <outlet property="photo" destination="5Rs-pX-FeP" id="CjY-f6-KQc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mLb-BH-bJO" secondAttribute="trailing" id="GHo-Ta-Qhb"/>
+                            <constraint firstItem="mLb-BH-bJO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TIi-gV-jno"/>
+                            <constraint firstItem="mLb-BH-bJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h5E-5T-T6y"/>
+                            <constraint firstItem="mLb-BH-bJO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zPX-Qn-f2j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tabelView" destination="mLb-BH-bJO" id="Xsf-7q-FFl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+</document>

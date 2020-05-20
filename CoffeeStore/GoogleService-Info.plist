@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>577737652317-tvn5vomhj7es7lik1ntod0if5kjvro95.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.577737652317-tvn5vomhj7es7lik1ntod0if5kjvro95</string>
+	<key>API_KEY</key>
+	<string>AIzaSyByTkrHOb6NpOsm33Df1h4o48cP1BcT4MU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>577737652317</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.quangkham.CoffeeStore</string>
+	<key>PROJECT_ID</key>
+	<string>coffeestore-ecdc3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>coffeestore-ecdc3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:577737652317:ios:28ede3b51c203c547635b4</string>
+	<key>DATABASE_URL</key>
+	<string>https://coffeestore-ecdc3.firebaseio.com</string>
+</dict>
+</plist>
